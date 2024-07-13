@@ -40,6 +40,41 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: black;
 
 }
+.headerBottom {
+  
+  border-bottom: 5px solid gray;
+  padding: 8px;
+
+}
+#headerBottom div {
+  display: inline;
+
+}
+#headerTop div {
+  display: inline;
+}
+#spanFirst {
+  font-weight: 800;
+  text-transform: uppercase;
+
+  
+}
+.span1 {
+  margin-right: 10px;
+}
+#composeButton {
+  background-color: yellow;
+  border:3px solid black;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  
+
+
+}
+  
+
 
 
 
@@ -115,15 +150,15 @@ p, h1, h2, h3, h4, h5, h6 {
     <header>
       <div id="headerTop">
         <div>
-          <span>Super Mail</span>
-          <span>Jess</span>
+          <span id="spanFirst" class="span1">Super Mail</span>
+          <span id="spanSecond" class="span1">Jess</span>
         </div>
         <div>
           <input type="text" placeholder="Search Mail" />
         </div>
       </div>
-      <div id="headerBottom">
-        <div>Compose</div>
+      <div class="headerBottom" id="headerBottom">
+        <div id="composeButton">Compose</div>
         <div>
           <button>All mail</button>
           <button>Unread</button>
